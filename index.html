@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Left menu</title>
+</head>
+<body>
+    
+    <!-- Дополнительный тэг body, чтобы контролировать поведение дочерних элементов.
+    С помощью него будет очень легко настроить положение .menu и .content -->
+    <div class="wrapper-body">
+
+        <!-- Тэг, который будет содержать в себе само выезжающее меню и кнопку -->
+        <div class="menu">
+
+            <!-- Кнопка меню -->
+            <a href="#" class="menu__button">
+                <span></span>
+            </a>
+
+            <!-- Меню образует из себя одну цельную структуру, именно поэтому необходимо
+            заключить его в один целый блок. К тому же, симантический тэг nav будет указывать
+            браузерам и поисковикам, что этот блок обозначает навигационное меню -->
+            <nav class="menu__nav">
+                <!-- Меню представляет из себя список ссылок, поэтому стоит применять
+                лист, в котором каждый пункт будет содержать ссылку с текстом -->
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">News</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <!-- Тэг, который будет содержать в себе контент веб-страницы -->
+        <div class="content">
+
+            <header class="section header">
+                <h2 class="title header__title">HEADER</h2>
+            </header>
+            <main class="main">
+                <section class="section promo">
+                    <h2 class="title promo__title">PROMOTION</h2>
+                </section>
+                <div class="section products">
+                    <h2 class="title products__title">PRODUCTS</h2>
+                </div>
+            </main>
+            <footer class="section footer">
+                <h2 class="title footer__title">FOOTER</h2>
+            </footer>
+        </div>
+
+    </div>
+
+
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
